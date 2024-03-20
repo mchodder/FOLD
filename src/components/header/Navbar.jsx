@@ -142,7 +142,7 @@ function classNames(...classes) {
 function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="container mx-auto px-4 py-6 flex flex-row items-center justify-between w-[100vw] h-[4rem] bg-gradient-to-b from-blue-duke-blue/50 to-green-sage/20 absolute top-8 left-52 rounded-b-lg rounded-t-xl text-geotica">
+    <header className="container mx-auto px-4 py-6 flex flex-row items-center justify-between w-[100vw] h-[4rem] bg-gradient-to-b from-blue-duke-blue/20 to-green-sage/20 absolute top-8 left-52 rounded-b-lg rounded-t-xl text-geotica shadow-md">
       <Link href="/">
         <img
           src={Logo}
@@ -152,14 +152,18 @@ function Navbar() {
       </Link>
       <nav className="container flex flex-row items-center justify-center flex-nowrap max-w-[50vw]">
         {menuData.map((item) => (
-          <Link
-            key={item.name}
-            to={item.href}
-            className="text-blue-duke-blue hover:text-yellow-canary-yellow bg-transparent font-bold text-lg mx-4 cursor-pointer transition duration-300 ease-in-out transform hover:scale-125 hover:shadow-sm rounded-lg flex flex-row items-center justify-center flex-nowrap hover:bg-blue-duke-blue hover:p-2 gap-x-2 font-geotica"
-          >
-            <item.icon className="h-6 w-6" />
-            {item.name}
-          </Link>
+          <ul>
+            <li key={item.name} className="relative">
+              <Link
+                key={item.name}
+                to={item.href}
+                className="text-blue-duke-blue hover:text-yellow-canary-yellow bg-transparent font-bold text-lg mx-4 cursor-pointer transition duration-300 ease-in-out transform hover:scale-125 hover:shadow-sm rounded-lg flex flex-row items-center justify-center flex-nowrap hover:bg-blue-duke-blue hover:p-2 gap-x-2 font-geotica"
+              >
+                <item.icon className="h-6 w-6" />
+                {item.name}
+              </Link>
+            </li>
+          </ul>
         ))}
       </nav>
       <div
