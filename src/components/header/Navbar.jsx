@@ -166,7 +166,7 @@ function Navbar() {
                 className={
                   open
                     ? "hidden"
-                    : "absolute left-0 top-12 z-10 w-auto bg-gradient-to-br from-green-sage/20 to-green-sage/20 via-blue-duke-blue/20 rounded-lg shadow-lg p-2"
+                    : "absolute left-4 top-12 z-10 w-auto bg-gradient-to-br from-green-sage/20 to-green-sage/20 via-blue-duke-blue/20 rounded-lg shadow-lg p-2"
                 }
                 onClick={() => setOpen(!open)}
               >
@@ -179,7 +179,7 @@ function Navbar() {
                         className={
                           open
                             ? "hidden"
-                            : "text-blue-duke-blue hover:text-yellow-canary-yellow bg-transparent font-bold text-lg mx-4 cursor-pointer transition duration-300 ease-in-out transform hover:scale-125 hover:shadow-sm rounded-lg flex flex-row items-center justify-center flex-nowrap hover:p-2 gap-x-2 font-geotica min-w-[12.5rem]"
+                            : "text-blue-duke-blue hover:text-yellow-canary-yellow bg-transparent font-bold text-lg mx-4 cursor-pointer transition duration-300 ease-in-out transform hover:scale-125 hover:shadow-sm rounded-lg flex flex-row items-center justify-start flex-nowrap hover:p-2 gap-x-3 font-geotica w-auto min-w-[10.5rem] hover:bg-blue-duke-blue hover:min-w-[12rem]"
                         }
                       >
                         <child.icon className="h-6 w-6" />
