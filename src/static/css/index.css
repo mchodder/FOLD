@@ -1,0 +1,50 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "SnellRoundhand";
+  src: url(/src/static/assets/fonts/SnellRoundhand.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Geotica";
+  src: url(/src/static/assets/fonts/GeoticaFour.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Geotica Engraved";
+  src: url(/src/static/assets/fonts/GeoticaFourEngraved.woff) format("woff");
+}
+
+:root {
+  --ultramarine: "#2C2E81";
+  --duke-blue: "#2B3188";
+  --cobalt: "#0047AB";
+  --sapphire: "#0F52BA";
+  --lapis-lazuli: "#26619C";
+  --cerulean: "#007BA8";
+
+  --camouflage-green: "#78866B";
+  --moss-green: "#8A9A5B";
+  --bud-green: "#7AB660";
+  --light-moss-green: "#AFD9AD";
+  --sage: "#BCB88A";
+
+  --orange: "#FFA500";
+  --dark-orange: "#FF8C00";
+
+  --ferrari-red: "#FF2800";
+
+  --dark-khaki: "#BDB76B";
+  --khaki: "#F0E68C";
+  --titanium-yellow: "#EEE600";
+  --cadmium-yellow: "#FFF600";
+  --chartreuse: "#DFFF00";
+  --lemonLime: "#E3FF00";
+  --canary-yellow: "#FFEF00";
+
+  --geotica: "Geotica";
+  --geotica-engraved: "Geotica Engraved";
+  --snell-roundhand: "SnellRoundhand";
+}
