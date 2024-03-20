@@ -162,6 +162,32 @@ function Navbar() {
                 <item.icon className="h-6 w-6" />
                 {item.name}
               </Link>
+              <ul
+                className={
+                  open
+                    ? "hidden"
+                    : "absolute left-0 top-12 z-10 w-auto bg-gradient-to-br from-green-sage/20 to-green-sage/20 via-blue-duke-blue/20 rounded-lg shadow-lg p-2"
+                }
+                onClick={() => setOpen(!open)}
+              >
+                {item.children &&
+                  item.children.map((child) => (
+                    <li key={child.name}>
+                      <Link
+                        key={child.name}
+                        to={child.href}
+                        className={
+                          open
+                            ? "hidden"
+                            : "text-blue-duke-blue hover:text-yellow-canary-yellow bg-transparent font-bold text-lg mx-4 cursor-pointer transition duration-300 ease-in-out transform hover:scale-125 hover:shadow-sm rounded-lg flex flex-row items-center justify-center flex-nowrap hover:p-2 gap-x-2 font-geotica min-w-[12.5rem]"
+                        }
+                      >
+                        <child.icon className="h-6 w-6" />
+                        {child.name}
+                      </Link>
+                    </li>
+                  ))}
+              </ul>
             </li>
           </ul>
         ))}

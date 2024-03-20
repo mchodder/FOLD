@@ -12,7 +12,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
-      <div className="bg-gradient-to-br from-green-light-moss-green to-blue-duke-blue via-green-sage w-screen h-screen">
+      <div className="bg-gradient-to-br from-green-light-moss-green/90 to-blue-duke-blue/90 via-green-sage/80 w-screen h-screen">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
